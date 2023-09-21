@@ -28,11 +28,13 @@ export default function Home() {
         hover:[--logo-drop-shadow-o:0.4] active:[--logo-drop-shadow-o:0.4]"
       />
       <h1 className="text-4xl font-medium">U-Turn Robotics</h1>
-      <p className="text-3xl">
-        Site in progress.
-        {Array(dotCount)
-          .fill(0)
-          .map(() => ".")}
+      <p className="relative text-3xl">
+        Site under construction
+        <span className="absolute left-full">
+          {Array(dotCount)
+            .fill(0)
+            .map(() => ".")}
+        </span>
       </p>
     </main>
   );
